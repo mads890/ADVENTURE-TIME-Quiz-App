@@ -8,5 +8,5 @@ File descriptions:
 - index.html will contain the final markup for the app
 - main.css will contain the final styling fot the app
 - index.js will contain the final js and jQuery for the app
-- the qiuzapp-images folder will contain all images used for this project*
+- the quizapp-images folder will contain all images used for this project*
 *all images are sourced from the internet, I claim NO ownership of them, and they are NOT my original work. 
