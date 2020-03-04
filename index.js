@@ -209,7 +209,7 @@ const STORE = [
     if (questionNumber < 12) {
       $('.feedbackbox').show().append(`<h2>${randomPositivePhrase}</h2>
           <div class="imgcontainer">
-            <img class="feedbackimage" src="images/Prismo.png" alt="Prismo smiling and waving"/>
+            <img class="feedbackimage" src="Prismo.png" alt="Prismo smiling and waving"/>
           </div>
           <p>You rescued a princess!</p>
           <button class="another" type="submit">ANOTHER!</button>`);
@@ -217,7 +217,7 @@ const STORE = [
     else if (questionNumber === 12) {
        $('.feedbackbox').show().append(`<h2>${randomPositivePhrase}</h2>
           <div class="imgcontainer">
-            <img class="feedbackimage" src="images/Prismo.png" alt="Prismo smiling and waving"/>
+            <img class="feedbackimage" src="Prismo.png" alt="Prismo smiling and waving"/>
           </div>
           <p>You rescued a princess!</p>
           <button class="finish" type="submit">FINISH!</button>`); 
@@ -232,7 +232,7 @@ const STORE = [
     if (questionNumber < 12) {
     $('.feedbackbox').show().append(`<h2>${randomNegativePhrase}</h2>
           <div class="imgcontainer">
-            <img class="feedbackimage" src="images/bmoalt.png" alt="Video game character displaying a frowning emoji face"/>
+            <img class="feedbackimage" src="bmoalt.png" alt="Video game character displaying a frowning emoji face"/>
           </div>
           <p>The correct answer is: ${STORE[questionNumber - 1].correctAnswer}</p>
           <button class="another" type="submit">ANOTHER!</button>`);
@@ -240,7 +240,7 @@ const STORE = [
      else if (questionNumber === 12) {
     $('.feedbackbox').show().append(`<h2>${randomNegativePhrase}</h2>
           <div class="imgcontainer">
-            <img class="feedbackimage" src="images/bmoalt.png" alt="Video game character displaying a frowning emoji face"/>
+            <img class="feedbackimage" src="bmoalt.png" alt="Video game character displaying a frowning emoji face"/>
           </div>
           <p>The correct answer is: ${STORE[questionNumber - 1].correctAnswer}</p>
           <button class="finish" type="submit">FINISH!</button>`);
@@ -276,7 +276,7 @@ const STORE = [
     if (correctNum === 12) {
       outcome = `<h2>YOU RESCUED ALL THE PRINCESSES!</h2>
           <div class="imgcontainer">
-            <img class="successimage" src="images/fistBump.png" alt="Finn and Jake fist bumping"/>
+            <img class="successimage" src="fistBump.png" alt="Finn and Jake fist bumping"/>
           </div>
           <p>Try again...IF YOU DARE!</p>
           <button class="restart" type="submit">RESTART!</button>`;
@@ -285,7 +285,7 @@ const STORE = [
     else if (correctNum > 0 && correctNum < 12) {
        outcome = `<h2>You rescued ${correctNum} princesses!</h2>
           <div class="imgcontainer">
-            <img class="moderateimage" src="images/okay.jpg" alt="Jake side hugging Finn"/>
+            <img class="moderateimage" src="okay.jpg" alt="Jake side hugging Finn"/>
           </div>
           <p>Try again...IF YOU DARE!</p>
           <button class="restart" type="submit">RESTART!</button>`;
@@ -294,7 +294,7 @@ const STORE = [
     else if (correctNum === 0) {
      outcome = `<h2>You have FAILED the princesses of Ooo! You are no hero. You should be ashamed of yourself.</h2>
           <div class="imgcontainer">
-            <img class="failureimage" src="images/failure2.png" alt="Finn laying on the ground frowning next to pictures of Princess Bubblegum"/>
+            <img class="failureimage" src="failure2.png" alt="Finn laying on the ground frowning next to pictures of Princess Bubblegum"/>
           </div>
           <p>Try again...IF YOU DARE!</p>
           <button class="restart" type="submit">RESTART!</button>`;
