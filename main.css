@@ -2,6 +2,22 @@
     box-sizing: border-box;
   }
   
+  body {
+    background-image: url("images/backgroundmobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  header {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #000099;
+  }
+  
+  /* h1 (its adventure time) should have a translucent white background and rounded edges */
+  
   h1, h2, p {
     text-align: center;
   }
@@ -10,32 +26,84 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
   
   main {
-    border: 1px solid;
+    border: 1px solid #ffffff;
     min-height: 300px;
     max-width: 500px;
+    padding: 15px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #000099;
+    color: #ffffff;
   }
   
-  .image {
-    height: 150px;
-    width: 50%;
-    background-color: gray;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+  .imgcontainer {
+    text-align: center;
   }
   
-  .choices {
+  .openingimage, .successimage, .moderateimage, .failureimage {
     max-width: 300px;
+    border: 1px solid #ffffff;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 15px;
+  }
+  
+  .feedbackimage {
+    max-width: 300px;
+  }
+  
+  .questiontext {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .choiceText {
+    font-size: 20px;
+  }
+  
+  .radioLabel {
+    display: block;
+  }
+  
+  form {
+    border: 1px solid #ffffff;
+    padding: 20px;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
   
-  .answer {
+  @media screen and (min-width: 1440px) {
+  
+  header {
+    max-width: 100%;
+  }
+  
+  .logo {
     display: block;
+    position: fixed;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  ul {
+    font-size: 20px;
+  }
+  
   }
