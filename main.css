@@ -52,7 +52,7 @@
   }
   
   .openingimage, .successimage, .moderateimage, .failureimage {
-    max-width: 300px;
+    max-width: 80%;
     border: 1px solid #ffffff;
   }
   
