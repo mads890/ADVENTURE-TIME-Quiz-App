@@ -40,6 +40,11 @@
     background-color: #000099;
     color: #ffffff;
   }
+
+.challengebox, .openingbox, .outcomebox, .feedbackbox {
+  margin-left: auto;
+  margin-right: auto;
+}
   
   .imgcontainer {
     text-align: center;
