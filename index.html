@@ -8,85 +8,44 @@
     <link href="main.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <!-- opening page -->
-    <header class="openingtitle">
+    <header class="top">
+      <img class="logo" src="images/logo.png" alt="Adventure Time logo on a cloud">
+      <section class="openingtitle">
         <h1>It's ADVENTURE TIME!</h1>
-    </header>
-      <main>
-      <section class="openingtext">
-        <h2>Collect gold stars to rescue the princess!</h2>
-        <p>Click 'SUBMIT!' to begin quiz!</p>
       </section>
-      <div class="image">
-        <p>this will be an image</p>
-      </div>
-      <button type="submit">SUBMIT!</button>
+      <section class="numberandscore">
+        <ul>
+            <li class="headerListItem">Challenge
+              <span class="questionNumber">0</span>/12</li>
+            <li class="headerListItem">
+              <span class="correctNumber">0</span> correct!
+            </li>
+          </ul>
+      </section>
+    </header>
+    <main class="main">
+      <section class="openingbox">
+        <h2>Ice King has kidnapped the princesses!</h2>
+        <div class="imgcontainer">
+          <img class="openingimage" src="images/captured.png" alt="scared princesses in a cage"/>
+        </div>
+        <p>Click 'READY!' to begin your quest and rescue them!</p>
+        <button class="ready" type="submit">READY!</button>
+      </section>
+
+      <section class="challengebox">
+      </section>
+
+      <section class="feedbackbox">
+      </section>
+
+      <section class="outcomebox">
+      </section>
     </main>
-    <hr/> <!-- hr indicates next page! -->
-    <!-- question pages -->
-    <header class="encouragement">
-        <h1>Keep going!</h1>
-    </header>
-    <section class="score">
-      <h2>Question 5/10 ... 4 gold stars so far!</h2>
-    </section>
-      <main>
-      <section class="question">
-        <h2>What is the correct answer?</h2>
-      </section>
-      <form class="choices">
-        <label for="answer1" class="answer">
-          <input type="radio" id="answer1" value="value1" name="answer"/>
-          <span>This is the correct answer</span>
-        </label>
-        <label for="answer2" class="answer">
-          <input class="radio" type="radio" id="answer2" value="value2" name="answer"/>
-          <span>This is the wrong answer</span>
-        </label>
-        <label for="answer3" class="answer">
-          <input type="radio" id="answer3" value="value3" name="answer"/>
-          <span>This is also the wrong answer</span>
-          </label>
-        <label for="answer4" class="answer"> 
-          <input type="radio" id="answer4" value="value4" name="answer"/>
-          <span>This is the wrong answer as well</span>
-        </label>
-      </form>
-      <button type="submit">SUBMIT!</button>
-      </main>
-      <hr/>
-    <!-- feedback pages -->
-    <header class="encouragement">
-        <h1>Algebraic!</h1>
-    </header>
-    <section class="score">
-      <h2>Question 5/10 ... 5 gold stars so far!</h2>
-    </section>
-      <main>
-      <section class="openingtext">
-        <h2>CORRECT!</h2>
-      </section>
-      <div class="image">
-        <p>this will be an image</p>
-      </div>
-      <button type="submit">Next Question!</button>
-      </main>
-      <hr/>
-    <!-- final page -->
-    <header class="finaltitle">
-        <h1>Mathematical!</h1>
-    </header>
-    <section class="score">
-      <h2>10/10 CORRECT! 10 gold stars!</h2>
-    </section>
-      <main>
-      <section class="openingtext">
-        <p>You finished the quiz and rescued the princess!</p>
-      </section>
-      <div class="image">
-        <p>this will be an image</p>
-      </div>
-      <button type="submit">Try Again!</button>
-    </main>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>
