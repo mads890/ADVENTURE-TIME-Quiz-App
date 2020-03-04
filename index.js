@@ -307,7 +307,7 @@ const STORE = [
     //should hide all sections aside from opening page, reveal opening page, and reset questionNUmber and correctNumber values
     $('.main').on('click', '.restart', function(event) {
       event.preventDefault();
-      $('.outcomebox').hide();
+      $('.outcomebox').empty().hide();
       $('.openingbox').show();
       questionNumber = 0;
       correctNumber = 0;
