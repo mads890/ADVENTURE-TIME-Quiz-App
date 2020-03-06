@@ -132,7 +132,6 @@ const STORE = [
       $('.challengebox').show().append(createQuestion(questionNumber));
       addQuestion();
     });
-    console.log(`startQuest ran`);
   };
   
   function createQuestion(questionNum) {
@@ -160,7 +159,6 @@ const STORE = [
     });
     $(questionWords).append(questionForm);
     $(`<button class="submit" type="submit">SUBMIT!</button>`).appendTo(questionForm);
-    console.log(`createQuestion ran`);
     return questionWords;
   };
   
@@ -171,21 +169,18 @@ const STORE = [
       $('.challengebox').hide();
       $('.feedbackbox').empty().append(getFeedback());
     });
-    console.log(`giveFeedback ran`);
   };
   
   function addQuestion() {
     //increases questionNumber
     questionNumber++;
     $('.questionNumber').text(questionNumber);
-    console.log(`addQuestion ran`);
   };
   
   function addCorrect() {
     //increases correctNumber
     correctNumber++;
     $('.correctNumber').text(correctNumber);
-    console.log(`addCorrect ran`);
   };
   
   function getFeedback() {
@@ -222,7 +217,6 @@ const STORE = [
           <p>You rescued a princess!</p>
           <button class="finish" type="submit">FINISH!</button>`); 
       };
-    console.log(`isCorrect ran`);
   };
   
   function isWrong() {
@@ -245,7 +239,6 @@ const STORE = [
           <p>The correct answer is: ${STORE[questionNumber - 1].correctAnswer}</p>
           <button class="finish" type="submit">FINISH!</button>`);
     };
-    console.log(`isWrong ran`);
   };
   
   function nextQuestion() {
@@ -256,7 +249,6 @@ const STORE = [
       $('.challengebox').empty().show().append(createQuestion(questionNumber));
       addQuestion();
     });
-    console.log(`nextQuestion ran`);
   };
   
   function showOutcome() {
@@ -267,7 +259,6 @@ const STORE = [
       $('.feedbackbox').hide();
       $('.outcomebox').show().append(createOutcome(correctNumber));
     });
-    console.log(`showOutcome ran`);
   };
   
   function createOutcome(correctNum) {
@@ -300,7 +291,6 @@ const STORE = [
           <button class="restart" type="submit">RESTART!</button>`;
     };
     return outcome;
-    console.log(`createOutcome ran`);
   };
   
   function tryAgain() {
@@ -314,7 +304,6 @@ const STORE = [
       $('.questionNumber').text(0);
       $('.correctNumber').text(0);
       });
-    console.log(`tryAgain ran`);
   };
   
   function doQuest() {
@@ -325,5 +314,5 @@ const STORE = [
     tryAgain();
   };
   
-  doQuest();
+  $(doQuest());
   
